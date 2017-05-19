@@ -1,0 +1,432 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.openNav {
+    font-size: 2em;
+    text-align: center;
+    padding:20px 0;
+    cursor: pointer;
+    position:fixed;
+    background-color:white;
+    width:100%;
+    z-index: 40;
+    transition: all 0.5s ease;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        font-size: 3em;
+        padding:30px 0;
+    }
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        font-size: 2em;
+        padding:20px 0;
+    }
+}
+
+.page-header-main {
+    
+    .video-overlay{
+        .video-fit {
+            width: 100%;
+            height: 100%;
+            padding:0;
+            margin:0;
+            z-index: -1;
+            overflow:hidden;
+            video {
+                min-width:100%;
+                max-height:100%;
+            }
+        }
+    }
+    
+    .page-image {
+        width:50%;
+        height:70%;
+        position: absolute;
+        top:30%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: black;
+        opacity: 0.7;
+        margin: auto;
+        background-image: url(../img/);
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+    .page-image2 {
+        background-image: url(../img/logo/logo.png);
+        background-position: center;
+        background-size: cover;
+        width:100%;
+        height:100vh;
+        background-color: black;
+        margin: auto;
+    }
+}
+
+.intro-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px 20px;
+    width:100%;
+    
+    .intro-top-para {
+        text-align: center;
+        
+        
+        h4 {
+            color:#e50050;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                font-size: 2em;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                font-size: 4em;
+            }
+        }
+        p {
+            font-size: 0.8em;
+            
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                font-size: 1.5em;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                font-size: 2em;
+            }
+        }
+        
+        img {
+            width:50%;
+            margin:20px 0;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                margin:20px 0;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                margin:40px 10px;
+                width:25%;
+            }
+        }
+    }
+}
+
+.bridge {
+    width:100%;
+    height:100vh;
+    padding:20px 30px;
+    background-image: url(../img/intro-back.png);
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        font-size: 2em;
+        padding:20px 40px;
+        
+    }
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        font-size: 1.5em;
+        width:100%;
+        padding:50px;
+    }
+    .background-opacity {
+        background-color: black;
+        opacity: 0.6;
+        border:1px solid white;
+        border-radius: 20px;
+        
+        .intro {
+            width:100%;
+            padding:20px;
+            color:white;
+            z-index:20;
+
+
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                padding:50px;
+
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                padding:50px;
+            }
+
+        }
+        
+    }
+    
+
+}
+
+.about {
+    max-width: 1620px;
+    width:100%;
+    margin: auto;
+    overflow:auto;
+    padding:100px 20px;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        padding:150px 20px 180px 20px;
+    }
+    .about-title {
+        text-align: center;
+        padding-bottom: 30px;
+        
+        h2 {
+            font-size: 1.1em;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                font-size: 2em;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                font-size: 3em;
+                padding:40px 0;
+            }
+        }
+    }
+    .about-panel-each {
+        overflow: auto;
+        padding:25px 10px;
+        border:1px solid grey;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            padding:50px 20px;
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            padding:50px 30px;
+        }
+        .desc {
+            padding:10px;
+        }
+    }
+    
+    .about-top-row {
+            
+      
+    }
+
+}
+.link-section {
+    position:relative;
+    overflow: auto;
+    
+    .test-div-right {
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        background-color: aquamarine;
+        width:30%;
+        height:60%;
+        z-index: 20;
+        right:20%;
+        top:20%;
+        
+        a {
+            text-decoration: none;
+
+            h3 {
+                color:white;
+                font-size: 3em;
+            }
+        } 
+    }
+    .test-div-left {
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        background-color: aquamarine;
+        width:30%;
+        height:60%;
+        z-index: 20;
+        left:20%;
+        top:20%;
+
+        a {
+            text-decoration: none;
+
+            h3 {
+                color:white;
+                font-size: 3em;
+            }
+        } 
+    }
+
+    .link {
+        width:100%;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            text-decoration: none;
+
+            h3 {
+                color:white;
+                font-size: 3em;
+            }
+        } 
+
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            height:500px;
+        }
+
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            height:100vh;
+        }
+    }
+}
+
+
+.link-side {
+    position:relative;
+    //overflow: auto;
+    height:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    overflow: hidden;
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        height:100vh;
+    }
+    .right {
+        position:absolute;
+        right:0;
+        bottom:-30%;
+        font-size: 40em;
+        color:white;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            font-size: 20em;
+            bottom:-20%;
+        }
+    }
+    .left {
+        position:absolute;
+        left:0;
+        bottom:-30%;
+        font-size: 40em;
+        color:white;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            font-size: 20em;
+            bottom:-20%;
+        }
+    }
+}
+
+.monster-1 {
+    background-image: url("../img/monsters/monster-link1.png");
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+.monster-2 {
+    background-image: url("../img/monsters/monster-link2.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.monster-3 {
+    background-image: url("../img/monsters/monster-link3.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.monster-4 {
+    background-image: url("../img/monsters/monster-link4.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.monster-5 {
+    background-image: url("../img/monsters/monster-link5.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.monster-6 {
+    background-image: url("../img/monsters/monster-link6.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.intro-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px 20px;
+    width:100%;
+
+    .intro-bottom-para {
+        text-align: center;
+
+        h4 {
+
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                font-size: 2em;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                font-size: 4em;
+            }
+        }
+        p {
+            font-size: 0.8em;
+
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                font-size: 1.5em;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                font-size: 2em;
+            }
+        }
+
+        img {
+            width:50%;
+            margin:20px 0;
+
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                margin:20px 0;
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                margin:40px 10px;
+                width:30%;
+            }
+        }
+    }
+}
